@@ -1,6 +1,6 @@
 <template lang="">
     <footer class="footer">
-  <div class="footer__addr">
+  <!-- <div class="footer__addr">
     <h1 class="footer__logo">Something</h1>
         
     <h2>Contact</h2>
@@ -86,14 +86,69 @@
     <div class="legal__links">
       <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
     </div>
+  </div> -->
+
+  <h2 class='title'>Let's work together.</h2>
+  <div class='contact'>
+    <div> 
+      <h2 class='studio'> TRINIX STUDIO </h2>
+      <p class='phone'>(+84) 365 759 235 - Mr. Tony Nguyen</p>
+      <p class='mail'>trinixagency@gmail.com</p>
+      <p class='address'>135A Nguyen Dinh Chinh St.</p>
+      <p class='address'>Ward 8, Phu Nhuan District</p>
+      <p class='address'>Ho Chi Minh City, Vietnamp</p>
+    </div>
+    <div> 
+      <h2 class='studio'> LOCTHANH TSA CO.LTD </h2>
+      <p class='phone'>(+84) 365 759 235 - Mr. Tony Nguyen</p>
+      <p class='mail'>info@locthanh-tsa.com </p>
+      <p class='address'>135A Nguyen Dinh Chinh St.</p>
+      <p class='address'>Ward 8, Phu Nhuan District</p>
+      <p class='address'>Ho Chi Minh City, Vietnamp</p>
+    </div>
   </div>
+
+  
 </footer>
 </template>
 <script>
 export default {
-    name : 'Footer',
-}
+  name: "Footer",
+};
 </script>
-<style lang="">
-    
+<style scoped>
+.title {
+  color: white;
+  margin-bottom: 5rem;
+}
+.contact{
+  display: flex;
+  flex-flow: row wrap;
+  margin-bottom: 5rem;
+}
+.contact > div {
+  margin-right: 10vh;
+}
+.studio {
+  color: #ff8900;
+  font-weight: 500;
+}
+.address {
+  line-height: 0;
+  font-size: 12px;
+  color: white;
+  font-weight: 100;
+}
+.phone {
+  font-size: 17px;
+  line-height: 1;
+  color: white;
+  font-weight: 300;
+}
+.mail {
+  font-size: 12px;
+  line-height: 1;
+  color: white;
+  font-weight: 300;
+}
 </style>
