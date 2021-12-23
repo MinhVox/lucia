@@ -2,13 +2,14 @@
 *:after,
 *:before {
     box-sizing: border-box;
+    font-family: Montserrat;
 }
 
 :root {
     --header-outer-height: 100px;
     --header-inner-height: 70px;
     --header-height-difference: calc( var(--header-outer-height) - var(--header-inner-height));
-    --header-bg: #fff;
+    --header-bg: #000111;
 }
 
 body {

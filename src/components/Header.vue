@@ -26,8 +26,6 @@
             {{ lang.text }}
           </option>
         </select> -->
-
-        <button class="menu">Menu</button>
       </nav>
       <b-dropdown class="language-select" size="sm" variant="outline" right>
         <template #button-content>
@@ -44,6 +42,7 @@
           <span>{{ lang.text }}</span></b-dropdown-item
         >
       </b-dropdown>
+      <button class="menu">Menu</button>
     </div>
   </header>
 </template>

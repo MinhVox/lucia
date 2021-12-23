@@ -9,7 +9,7 @@
     display: flex;
     align-items: center;
     /* Other */
-    background-color: rgb(255, 255, 255, 0.8);
+    background-color: #000111;
     backdrop-filter: blur(6px);
 }
 
@@ -29,16 +29,17 @@
 
 .header-logo img {
     display: block;
-    height: calc(var(--header-inner-height) - 30px);
+    height: calc(var(--header-inner-height) - 20px);
 }
 
 .header-navigation {
     display: flex;
     flex-wrap: wrap;
+    color: white;
 }
 
 .header-navigation .pages,
-.header-navigation .menu {
+.menu {
     font-size: 1.125rem;
     color: inherit;
     margin: auto 0 auto 4rem;
@@ -51,49 +52,74 @@
     font-size: 1.125rem;
     color: inherit;
     text-decoration: none;
+    padding: 10px 10px 10px 10px;
 }
 
-.header-navigation .menu {
+.menu {
     border: 0;
     background-color: transparent;
     padding: 0;
+    color: white;
 }
 
-.header-navigation .pages:hover:after,
-.header-navigation .menu:hover:after {
-    transform: scalex(1);
+.header-navigation .pages:hover:before,
+.menu:hover:before {
+    display: block;
+    opacity: 100;
 }
 
-.header-navigation .pages:after,
-.header-navigation .menu:after {
+.header-navigation .pages::before {
+    transition: 0.5s ease-in-out;
+    content: "";
+    opacity: 0;
+    background-image: url("../../img/effect/polygon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 100%;
+    height: 28px;
+    left: -6px;
+    top: 6px;
+}
+
+.menu::before {
     transition: 0.25s ease;
     content: "";
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: currentcolor;
-    transform: scalex(0);
+    opacity: 0;
+    background-image: url("../../img/effect/polygon.png");
+    background-repeat: no-repeat;
+    background-size: contain;
     position: absolute;
-    bottom: -2px;
-    left: 0;
+    width: 100%;
+    height: 28px;
+    left: -14px;
+    top: -2px;
 }
 
 .language-select {
     margin-left: 4.00rem;
     position: relative;
     font-weight: 500;
-    display: none;
+    display: none !important;
     right: 100;
 }
 
-@media (min-width: 800px) {
+.language-select>button {
+    color: white;
+}
+
+.language-select:hover>button {
+    color: white;
+}
+
+@media (min-width: 1000px) {
     .header-navigation .pages {
         display: inline-block;
     }
-    .header-navigation .menu {
+    .menu {
         display: none;
     }
     .language-select {
-        display: inline-block;
+        display: inline-flex !important;
     }
 }

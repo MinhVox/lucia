@@ -1,24 +1,24 @@
 <template>
   <div id="app">
     <Header/>
-    <!-- <HelloWorld/> -->
-    <UpcomingSoon/>
+    <Home/>
+    <!-- <UpcomingSoon/> -->
     <Footer/>
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
-// import HelloWorld from './components/HelloWorld.vue'
 import Footer from './components/Footer.vue'
-import UpcomingSoon from './components/upcomingSoon/UpcomingSoon.vue'
+// import UpcomingSoon from './components/upcomingSoon/UpcomingSoon.vue'
+import Home from './components/home/HomePage.vue'
 export default {
   name: 'App',
    components: {
     Header: Header,
-    // HelloWorld : HelloWorld,
     Footer: Footer,
-    UpcomingSoon : UpcomingSoon
+    // UpcomingSoon : UpcomingSoon
+    Home: Home
   },
 }
 </script>
