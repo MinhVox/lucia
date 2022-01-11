@@ -8,10 +8,10 @@
 </template>
 
 <script>
-import Header from './components/Header.vue'
-import Footer from './components/Footer.vue'
+import Header from './views/Header.vue'
+import Footer from './views/Footer.vue'
 // import UpcomingSoon from './components/upcomingSoon/UpcomingSoon.vue'
-import Home from './components/home/HomePage.vue'
+import Home from './views/home/HomePage.vue'
 export default {
   name: 'App',
    components: {

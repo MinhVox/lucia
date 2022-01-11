@@ -1,0 +1,38 @@
+.client-title {
+    width: 100%;
+    margin: .7em auto;
+    overflow: hidden;
+    text-align: center;
+    font-weight: 300;
+    color: black;
+    font-family: Montserrat_Bold;
+    font-size: 40px;
+}
+
+.client-title:before,
+.client-title:after {
+    content: "";
+    display: inline-block;
+    width: 50%;
+    margin: 0 90px 0 -55%;
+    vertical-align: middle;
+    border-bottom: 4px solid;
+}
+
+.client-title:after {
+    margin: 0 -55% 0 90px;
+}
+
+.client-customer {
+    margin: 20px 0;
+}
+
+.list-customer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.list-customer>img {
+    margin: 10px;
+}

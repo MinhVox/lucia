@@ -1,0 +1,140 @@
+.project {
+    height: var(--height-project);
+    display: flex;
+    background-color: #FFFFFF;
+}
+
+.box-infor-project-left {
+    padding-top: 10px;
+    margin-top: 95px;
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.index-project {
+    font-size: 40px;
+    font-family: Montserrat_Bold;
+    color: #011021;
+    line-height: 48px;
+    margin-bottom: 0;
+    margin-left: 25%;
+    transition: 0.75s;
+}
+
+.index-project::before {
+    background-image: url("../../img/effect/polygon-blue.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    position: absolute;
+    width: 67px;
+    height: 58px;
+    content: "";
+    left: -28px;
+    top: 0px;
+    margin-left: 25%;
+    transition: 0.75s;
+}
+
+.name-project {
+    font-size: 40px;
+    font-family: Montserrat_Bold;
+    color: #011021;
+    margin-left: 28%;
+    transition: 0.75s;
+}
+
+.line {
+    width: 65%;
+    border: 1px solid #000111;
+    background-color: #000111;
+    opacity: 0.8;
+    margin: 10px 0;
+    float: left;
+    transition: 0.75s;
+}
+
+.box-line {
+    width: 60%;
+    text-align: right;
+    transition: 0.75s;
+}
+
+.box-infor-project-right {
+    position: relative;
+    width: 50%;
+    height: 100%;
+}
+
+.button-see-more {
+    color: white;
+    background-color: black;
+    border: none;
+    padding: 5px 30px 5px 5px;
+    position: absolute;
+    top: 50%;
+    transform: translate(50%, -50%);
+    font-family: Montserrat;
+    font-size: 20px;
+    z-index: 2;
+    transition: 0.75s;
+}
+
+.project-img {
+    height: 325px;
+    width: 468px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    right: 40px;
+}
+
+.project-bg {
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+    right: 0;
+}
+
+.project-block {
+    height: var(--height-project);
+    transform: translateX(110%);
+    transition: 0.75s;
+}
+
+.project:hover .project-block {
+    transform: translateX(0);
+}
+
+.project:hover .button-see-more {
+    transform: translate(150%, -50%);
+}
+
+.project:hover {
+    background-color: rgba(1, 16, 33, 0.1);
+}
+
+.project:hover .index-project {
+    margin-left: 28%;
+}
+
+.project:hover .index-project::before {
+    margin-left: 28%;
+}
+
+.project:hover .name-project {
+    margin-left: 31%;
+}
+
+.project:hover .box-line {
+    width: 65%;
+}
+
+.project:hover .line {
+    width: 70%;
+}
+
+.button-see-more:hover {
+    text-decoration: underline;
+}

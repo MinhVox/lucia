@@ -22,17 +22,27 @@
 }
 
 .see-more::before {
-    transition: 0.25s ease;
+    transition: 0.5s ease;
     content: "";
     background-image: url("../../img/effect/polygon-triange.png");
     background-repeat: no-repeat;
     background-size: contain;
     position: absolute;
-    width: 100%;
+    width: 80px;
     height: 70px;
     z-index: -1;
     left: -40px;
     top: -26px;
+}
+
+.container-seemore:hover .see-more {
+    transition: 0.5s ease;
+    left: 100px;
+}
+
+.container-seemore:hover .see-more::before {
+    transform: rotate(90deg);
+    top: -20px;
 }
 
 @media (max-width: 500px) {

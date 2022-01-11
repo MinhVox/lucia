@@ -11,6 +11,7 @@
     /* Other */
     background-color: #000111;
     backdrop-filter: blur(6px);
+    z-index: 3;
 }
 
 .header-inner {
@@ -22,6 +23,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 3;
 }
 
 
@@ -112,7 +114,7 @@
     color: white;
 }
 
-@media (min-width: 1000px) {
+@media (min-width: 1110px) {
     .header-navigation .pages {
         display: inline-block;
     }

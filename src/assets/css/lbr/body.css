@@ -8,6 +8,7 @@
 :root {
     --header-outer-height: 100px;
     --header-inner-height: 70px;
+    --height-project: 450px;
     --header-height-difference: calc( var(--header-outer-height) - var(--header-inner-height));
     --header-bg: #000111;
 }
@@ -20,11 +21,26 @@ body {
     line-height: 1.5;
     position: relative;
     height: 100%;
+    overflow-x: hidden;
 }
 
 .responsive-wrapper {
-    width: 90%;
-    max-width: 1280px;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    /* max-width: 1280px; */
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+@media (max-width: 1290px) {
+    .responsive-wrapper {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media (max-width: 700px) {
+    .responsive-wrapper {
+        margin-left: auto;
+        margin-right: auto;
+    }
 }
