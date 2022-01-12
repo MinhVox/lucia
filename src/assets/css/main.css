@@ -5,6 +5,7 @@
 @import './lbr/upcoming.css';
 @import './lbr/project.css';
 @import './lbr/client-customer.css';
+@import './lbr/logo.css';
 @font-face {
     font-family: Montserrat;
     src: url(../../assets/fonts/Montserrat/Montserrat-Regular.ttf);

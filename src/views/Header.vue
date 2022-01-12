@@ -5,8 +5,12 @@
         <div class="header-logo">
           <img src="@/assets/img/logo/logo-trinix.svg" />
         </div>
-        <a class="pages" href="#">{{ $t("header.home") }}</a>
-        <a class="pages" href="#">{{ $t("header.portfolio") }}</a>
+        <a class="pages" href="#" @click="pushNavigator('HomePage')">{{
+          $t("header.home")
+        }}</a>
+        <a class="pages" href="#" @click="pushNavigator('Portfolio')">{{
+          $t("header.portfolio")
+        }}</a>
         <a class="pages" href="#">{{ $t("header.about") }}</a>
         <a class="pages" href="#">{{ $t("header.blog") }}</a>
 
@@ -75,6 +79,10 @@ export default {
     callSetLangActions(key) {
       this.key = key;
       this.$store.dispatch("setLang", key);
+    },
+
+    pushNavigator(router) {
+      this.$router.push({ name: router });
     },
   },
 };

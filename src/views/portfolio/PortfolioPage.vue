@@ -3,11 +3,6 @@
     <Background :title="title"/>
 
     <div class="list-project">
-      <div class="content" style="padding: 70px 0 70px 0">
-        <h1 class="title" style="color: #011021">WHAT WE DO...</h1>
-        <p class="description" style="color: #000111">Lörem ipsum suhägt.</p>
-      </div>
-
       <HomeProject v-for="(item, index) in 4" :key="index" :index="index + 1" />
 
       <LogoGaming />
@@ -40,7 +35,7 @@ export default {
 
   data() {
     return {
-      title: "WELCOME"
+      title: "OUR WORKS"
     }
   },
 };

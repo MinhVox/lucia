@@ -6,14 +6,17 @@ import '@/assets/css/main.css'
 import '@/assets/js/main.js'
 import { BootstrapVue, IconsPlugin } from 'bootstrap-vue'
 import 'bootstrap/dist/css/bootstrap.min.css'
+import router from './routers/index'
 
 Vue.config.productionTip = false
 Vue.use(BootstrapVue);
 Vue.use(IconsPlugin);
 
+
 const app = new Vue({
     i18n,
     store,
+    router,
     render: h => h(App),
 }).$mount('#app')
 

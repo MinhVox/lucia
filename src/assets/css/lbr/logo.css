@@ -1,0 +1,43 @@
+.div-logo-gaming {
+    height: var(--height-project);
+    display: flex;
+    background-color: #FFFFFF;
+}
+
+#logo-gaming-black {
+    height: var(--height-project);
+    opacity: 100;
+    transition: 0.75s;
+    position: absolute;
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+}
+
+#logo-gaming-white {
+    height: var(--height-project);
+    margin: auto;
+    opacity: 0;
+    transition: 0.75s;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    z-index: 1;
+}
+
+.div-logo-gaming:hover #logo-gaming-black {
+    opacity: 0;
+    transform: translateX(-50vh);
+}
+
+.div-logo-gaming:hover #logo-gaming-white {
+    transform: translateX(-50vh);
+    opacity: 100;
+}
+
+.div-logo-gaming:hover {
+    background-color: #000000;
+}
