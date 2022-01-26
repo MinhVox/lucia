@@ -1,0 +1,17 @@
+.bg-join-us {
+    background-image: url("../../img/background/bg_home.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+}
+
+.overlay-join-us {
+    background-image: linear-gradient(to top, #ffffff, #0a0a0a00, #0a0a0a00, rgba(253, 253, 253, 0));
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}

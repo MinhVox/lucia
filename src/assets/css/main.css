@@ -6,6 +6,10 @@
 @import './lbr/project.css';
 @import './lbr/client-customer.css';
 @import './lbr/logo.css';
+@import './lbr/welcome.css';
+@import './lbr/about-us.css';
+@import './lbr/porfolio.css';
+@import './lbr/join-us.css';
 @font-face {
     font-family: Montserrat;
     src: url(../../assets/fonts/Montserrat/Montserrat-Regular.ttf);

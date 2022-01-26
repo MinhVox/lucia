@@ -21,7 +21,7 @@ export default {
   },
 
   created() {
-    this.$router.push({ name: "HomePage" });
+    this.$router.push({ name: "Welcome" });
   },
 };
 </script>

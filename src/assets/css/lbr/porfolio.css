@@ -1,0 +1,17 @@
+.bg-portfolio {
+    background-image: url("../../img/background/bg_home.png");
+    height: 100vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: -100px;
+}
+
+.overlay-portfolio {
+    background-image: linear-gradient(to right, #000111, #000111f8, #00011179, rgba(253, 253, 253, 0));
+    height: 100vh;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+}

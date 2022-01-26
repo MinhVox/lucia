@@ -5,9 +5,9 @@
         <h1 class="title">{{title}}</h1>
         <p class="description">We are ...</p>
         <div class="container-seemore">
-          <span class="see-more">
+          <!-- <span class="see-more">
             See our project <b-icon icon="arrow-right"></b-icon>
-          </span>
+          </span> -->
         </div>
       </div>
     </div>
@@ -51,8 +51,8 @@ export default {
   width: 400px;
 }
 
-.content {
+/* .content {
   margin-left: 10%;
   padding-top: 20%;
-}
+} */
 </style>

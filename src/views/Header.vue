@@ -5,15 +5,15 @@
         <div class="header-logo">
           <img src="@/assets/img/logo/logo-trinix.svg" />
         </div>
-        <a class="pages" href="#" @click="pushNavigator('HomePage')">{{
+        <a class="pages" href="#" @click="pushNavigator('Welcome')">{{
           $t("header.home")
         }}</a>
         <a class="pages" href="#" @click="pushNavigator('Portfolio')">{{
           $t("header.portfolio")
         }}</a>
-        <a class="pages" href="#">{{ $t("header.about") }}</a>
+        <a class="pages" href="#" @click="pushNavigator('AboutUs')">{{ $t("header.about") }}</a>
         <a class="pages" href="#">{{ $t("header.blog") }}</a>
-
+        <a class="pages" href="#" @click="pushNavigator('JoinUs')">{{ $t("header.joinUs") }}</a>
         <!-- <select
           id="language-picker-select"
           class="language-select"
